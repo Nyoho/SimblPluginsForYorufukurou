@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55A9866915E5D0540043B3B8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A9866815E5D0540043B3B8 /* Cocoa.framework */; };
+		55A9867315E5D0540043B3B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55A9867115E5D0540043B3B8 /* InfoPlist.strings */; };
+		55A9868515E5D22F0043B3B8 /* YorufukurouExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9868415E5D22F0043B3B8 /* YorufukurouExtension.m */; };
+		55A9868815E5DDFF0043B3B8 /* NSObject+YorufukurouExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9868715E5DDFF0043B3B8 /* NSObject+YorufukurouExtension.m */; };
+		55A9868B15E5E8F20043B3B8 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9868A15E5E2BF0043B3B8 /* NSObject+Swizzle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55A9866515E5D0540043B3B8 /* EasyTabMovementForYorufukurou.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTabMovementForYorufukurou.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A9866815E5D0540043B3B8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		55A9866B15E5D0540043B3B8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		55A9866C15E5D0540043B3B8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		55A9866D15E5D0540043B3B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55A9867015E5D0540043B3B8 /* EasyTabMovementForYorufukurou-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyTabMovementForYorufukurou-Info.plist"; sourceTree = "<group>"; };
+		55A9867215E5D0540043B3B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55A9867415E5D0540043B3B8 /* EasyTabMovementForYorufukurou-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyTabMovementForYorufukurou-Prefix.pch"; sourceTree = "<group>"; };
+		55A9868315E5D22F0043B3B8 /* YorufukurouExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YorufukurouExtension.h; path = EasyTabMovementForYorufukurou/YorufukurouExtension.h; sourceTree = "<group>"; };
+		55A9868415E5D22F0043B3B8 /* YorufukurouExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YorufukurouExtension.m; path = EasyTabMovementForYorufukurou/YorufukurouExtension.m; sourceTree = "<group>"; };
+		55A9868615E5DDFF0043B3B8 /* NSObject+YorufukurouExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+YorufukurouExtension.h"; path = "EasyTabMovementForYorufukurou/NSObject+YorufukurouExtension.h"; sourceTree = "<group>"; };
+		55A9868715E5DDFF0043B3B8 /* NSObject+YorufukurouExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YorufukurouExtension.m"; path = "EasyTabMovementForYorufukurou/NSObject+YorufukurouExtension.m"; sourceTree = "<group>"; };
+		55A9868915E5E2BF0043B3B8 /* NSObject+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject+Swizzle.h"; path = "Common/NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		55A9868A15E5E2BF0043B3B8 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Swizzle.m"; path = "Common/NSObject+Swizzle.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55A9866215E5D0540043B3B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A9866915E5D0540043B3B8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55A9865A15E5D0540043B3B8 = {
+			isa = PBXGroup;
+			children = (
+				55A9868315E5D22F0043B3B8 /* YorufukurouExtension.h */,
+				55A9868415E5D22F0043B3B8 /* YorufukurouExtension.m */,
+				55A9868615E5DDFF0043B3B8 /* NSObject+YorufukurouExtension.h */,
+				55A9868715E5DDFF0043B3B8 /* NSObject+YorufukurouExtension.m */,
+				55A9868915E5E2BF0043B3B8 /* NSObject+Swizzle.h */,
+				55A9868A15E5E2BF0043B3B8 /* NSObject+Swizzle.m */,
+				55A9866E15E5D0540043B3B8 /* EasyTabMovementForYorufukurou */,
+				55A9866715E5D0540043B3B8 /* Frameworks */,
+				55A9866615E5D0540043B3B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55A9866615E5D0540043B3B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55A9866515E5D0540043B3B8 /* EasyTabMovementForYorufukurou.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55A9866715E5D0540043B3B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55A9866815E5D0540043B3B8 /* Cocoa.framework */,
+				55A9866A15E5D0540043B3B8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55A9866A15E5D0540043B3B8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55A9866B15E5D0540043B3B8 /* AppKit.framework */,
+				55A9866C15E5D0540043B3B8 /* CoreData.framework */,
+				55A9866D15E5D0540043B3B8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		55A9866E15E5D0540043B3B8 /* EasyTabMovementForYorufukurou */ = {
+			isa = PBXGroup;
+			children = (
+				55A9866F15E5D0540043B3B8 /* Supporting Files */,
+			);
+			path = EasyTabMovementForYorufukurou;
+			sourceTree = "<group>";
+		};
+		55A9866F15E5D0540043B3B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55A9867015E5D0540043B3B8 /* EasyTabMovementForYorufukurou-Info.plist */,
+				55A9867115E5D0540043B3B8 /* InfoPlist.strings */,
+				55A9867415E5D0540043B3B8 /* EasyTabMovementForYorufukurou-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55A9866415E5D0540043B3B8 /* EasyTabMovementForYorufukurou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A9867715E5D0540043B3B8 /* Build configuration list for PBXNativeTarget "EasyTabMovementForYorufukurou" */;
+			buildPhases = (
+				55A9866115E5D0540043B3B8 /* Sources */,
+				55A9866215E5D0540043B3B8 /* Frameworks */,
+				55A9866315E5D0540043B3B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyTabMovementForYorufukurou;
+			productName = EasyTabMovementForYorufukurou;
+			productReference = 55A9866515E5D0540043B3B8 /* EasyTabMovementForYorufukurou.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55A9865C15E5D0540043B3B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "北䑓 如法";
+			};
+			buildConfigurationList = 55A9865F15E5D0540043B3B8 /* Build configuration list for PBXProject "EasyTabMovementForYorufukurou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55A9865A15E5D0540043B3B8;
+			productRefGroup = 55A9866615E5D0540043B3B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55A9866415E5D0540043B3B8 /* EasyTabMovementForYorufukurou */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55A9866315E5D0540043B3B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A9867315E5D0540043B3B8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55A9866115E5D0540043B3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A9868515E5D22F0043B3B8 /* YorufukurouExtension.m in Sources */,
+				55A9868815E5DDFF0043B3B8 /* NSObject+YorufukurouExtension.m in Sources */,
+				55A9868B15E5E8F20043B3B8 /* NSObject+Swizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55A9867115E5D0540043B3B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55A9867215E5D0540043B3B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55A9867515E5D0540043B3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		55A9867615E5D0540043B3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		55A9867815E5D0540043B3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyTabMovementForYorufukurou/EasyTabMovementForYorufukurou-Prefix.pch";
+				INFOPLIST_FILE = "EasyTabMovementForYorufukurou/EasyTabMovementForYorufukurou-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		55A9867915E5D0540043B3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyTabMovementForYorufukurou/EasyTabMovementForYorufukurou-Prefix.pch";
+				INFOPLIST_FILE = "EasyTabMovementForYorufukurou/EasyTabMovementForYorufukurou-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55A9865F15E5D0540043B3B8 /* Build configuration list for PBXProject "EasyTabMovementForYorufukurou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A9867515E5D0540043B3B8 /* Debug */,
+				55A9867615E5D0540043B3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55A9867715E5D0540043B3B8 /* Build configuration list for PBXNativeTarget "EasyTabMovementForYorufukurou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A9867815E5D0540043B3B8 /* Debug */,
+				55A9867915E5D0540043B3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55A9865C15E5D0540043B3B8 /* Project object */;
+}
