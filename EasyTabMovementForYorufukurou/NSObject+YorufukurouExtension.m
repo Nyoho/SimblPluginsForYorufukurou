@@ -9,7 +9,7 @@
 #import "NSObject+YorufukurouExtension.h"
 #import <objc/runtime.h>
 
-@implementation NSObject (YorufukurouExtension)
+@implementation NSResponder (YorufukurouExtension)
 
 - (void)__addedKeyDown:(NSEvent *)event
 {
@@ -17,9 +17,24 @@
 
     if (event.type !=  NSKeyDown) return;
 
-    if (event.keyCode == 43)
+    if (event.keyCode == 43) {
         [self performSelector:@selector(moveToPreviousTab:) withObject:self];
-    else if (event.keyCode == 47)
+        return;
+    } else if (event.keyCode == 47) {
         [self performSelector:@selector(moveToNextTab:) withObject:self];
+        return;
+    }
 }
+
+- (BOOL)__acceptsFirstResponder{return YES;}
+- (BOOL)__becomeFirstResponder{return YES;}
+- (BOOL)__performKeyEquivalent:(NSEvent *)event {
+    if (event.keyCode == 43 || event.keyCode == 47) {
+        return YES;
+    } else {
+        return [self __performKeyEquivalent:event];
+    }
+    return YES;
+}
+
 @end

@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (YorufukurouExtension)
+@interface NSResponder (YorufukurouExtension)
 
 @end

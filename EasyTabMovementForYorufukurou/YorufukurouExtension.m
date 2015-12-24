@@ -17,6 +17,8 @@
         Class class = objc_getClass("TCTweetView");
         NSLog(@"%@", [class class]);
         [class swizzleMethod:@selector(keyDown:) withMethod:@selector(__addedKeyDown:)];
+        [class swizzleMethod:@selector(performKeyEquivalent:) withMethod:@selector(__performKeyEquivalent:)];
+
     }
 }
 
